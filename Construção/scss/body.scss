@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "robot";
+    src: url("../fonts/RobotoSlab-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "oswad";
+    src: url("../fonts/Oswald-VariableFont_wght.ttf");
+}
+
+@mixin fonte($Fonte, $size, $color) {
+    font-family: $Fonte;
+    font-size: $size;
+    color: $color;
+}
+
+$Color-button:yellow;
+$color-p:yellow;
+$bacgra-colorsection:rgba(146, 53, 53, 0.753);
+$bagroud-coloraside:rgba(68, 67, 67, 0.815);
+$Nav-bar:rgba(72, 27, 233, 0.74);
+
+.tela {
+    display: block;
+    position: static;
+    z-index: 1;
+}
+
+picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
+
+    div {
+        flex: 1 1 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+
+        button {
+            width: 150px;
+            background-color: $Color-button;
+            height: 50px;
+            border-radius: 5%px;
+
+            font: {
+                family: "robot";
+            }
+
+            
+        }
+
+        h1 {
+            color: red;
+
+            font: {
+                family: "robot";
+                size: 1.5em;
+                weight: bold;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+}
+
+/*==================text==============================*/
+.text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2% auto 2% auto;
+    align-items: center;
+
+    section {
+        width: 50%;
+
+        hr {
+            background-color: $Color-button;
+            width: 200px;
+            height: 9px;
+        }
+
+        padding: 4% 5%;
+
+        h6 {
+            font: {
+                family: "oswad";
+                size: 1em;
+                color: rgba(155, 148, 148, 0.247);
+                weight: bold;
+            }
+        }
+
+        h1,
+        h2,
+        h3 {
+            font: {
+                family: "oswad";
+                size: 2em;
+            }
+        }
+    }
+
+    aside {
+        padding: 4% 5%;
+        width: 50%;
+
+        p:nth-child(1) {
+            @include fonte("robot", 1em, $bagroud-coloraside);
+            margin-bottom: 2%;
+        }
+
+        p {
+            font: {
+                family: "robot";
+                size: 1.2em;
+            }
+        }
+    }
+}
+
+/*=================apresentação=========================*/
+.separe {
+    clear: both;
+}
+
+
+
+.cartes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2% AUTO 2% auto;
+  
+    position: relative;
+
+
+    .galeria {
+        display: block;
+        position: relative;
+        margin: 2px;
+
+        img {
+            display: block;
+        }
+
+        p {
+            display: inline;
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            color: $color-p;
+
+            font: {
+                family: "oswad";
+                size: 2em;
+            }
+        }
+    }
+}
+
+/*====================paisagen======================*/
+.pas {
+    margin-top: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+/*========================escreva=========================*/
+.escrever {
+    margin: 5% auto 5% auto;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    form {
+        text-align: center;
+
+
+        input[type="email"] {
+            width: 600px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            float: left;
+
+            font: {
+                family: "oswad";
+                size: 1.7em;
+            }
+        }
+
+        input[type="submit"] {
+            width: 100px;
+            height: 50px;
+            cursor: pointer;
+            float: right;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: $Nav-bar;
+
+}

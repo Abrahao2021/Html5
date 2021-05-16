@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/Compiler/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/Compiler/Stily.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="icon" href="/icon/seguranca-do-banco-de-dados.svg">
+
+  <title>SegurançaDigital</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="d-flex flex-row justify-content-between bg-primary text-white px-2 align-items-center p-2">
+      <section class="col align-items-center">
+        <p class=" m-0 p-0">(021)555-777</p>
+      </section>
+      <aside class="d-flex flex-row justify-content-around">
+        <div class="col-sm">
+          <button class="btn btn-primary btn-sm"><i class="bi bi-facebook"></i></button>
+          <button class="btn btn-primary btn-sm"><i class="bi bi-youtube "></i></button>
+          <button class="btn btn-primary btn-sm"><i class="bi bi-instagram"></i></button>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <header class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-dark text-white" style="background-color: #AACCE6;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/icon/seguranca-do-banco-de-dados.svg" alt="" width="30px"
+            height="30px">Segurança </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">serviços</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!------------------------------------------------Carrosel--------------------------------------------------------->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/security-265130_1280.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/hacker-2300772_1280.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/images/computer-1591018_1280.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!---------------------------------------pictures--------------------------------------------------------------->
+    <picture id="media" class="position-relative">
+      <source media="(max-width:480px )" srcset="/images/BussnesManLitlle.jpg" class="img-fluid">
+      <source media="(max-width: 768px )" srcset="/images/BussnesMan.jpg" class="img-fluid">
+      <img src="/images/BussnesMan.jpg" alt="" class="img-fluid">  
+    </picture>
+    
+  </header>
+
+  <main class="container-fluid  " style="background-color: #E6E6E6;">
+    <div class="row justify-content-center">
+      <div class="col-6 text-center  lh-sm ">
+        <h2 class=" mt-5">O que é segurança?</h2>
+        <p class="mb-5">É uma empresa que atua na otimização e segurança de dados para pequenas, médias e grandes
+          empresas</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="container ">
+    <div class="row">
+      <div class="d-flex flex-row flex-wrap text-center justify-content-around ">
+        <div class=" col-lg m-2">
+          <div class="card p-4" style="width: 17rem;">
+            <img src="/icon/speed-test.svg" class="card-img-top" width="100px" height="100px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">IDM</h5>
+              <p class="card-text">O Internet Download Manager gerencia e acelera o download de vídeos e arquivos
+                no PC ou no, desktop</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop2">Saiba mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg m-2">
+          <div class="card p-4" style="width: 17rem;">
+            <img src="/icon/recursos-humanos.svg" class="card-img-top" width="100px" height="100px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HRM</h5>
+              <p class="card-text">Utilize nossas técnicas e ferramentas que auxiliam os gestores na gestão do capital
+                humano de sua empresa.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">Saiba mais</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg m-2">
+
+          <div class="card p-4" style="width: 17rem;">
+            <img src="/icon/carteira-de-identidade.svg" width="100px" height="100px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SSO</h5>
+              <p class="card-text">é um esquema de autenticação que permite que um usuário faça logon com um ID e senha
+                exclusivos</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop3">Saiba mais</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-5 text-white p-2 auto  " <picture class="row">
+    <img src="/images/Automat.jpg" class="img-fluid" alt="Foto de Christina Morillo no Pexels">
+    </picture>
+    <div class="col-sm-2">
+      <h2>Automatizar</h2>
+      <p>Automatizar sua empresa melhorando os recursos e desenpenho </p>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-5">
+    <div class="d-flex flex-row  justify-content-center flex-wrap">
+      <section class="d-inline-flex flex-column align-self-center bd-highlight text-center">
+
+        <div class=" col-sm-8 d-flex flex-row  ">
+          <img src="/icon/escadas.svg" width="50px" height="50px" alt="">
+          <p class="mx-4">Crecimento escalonado</p>
+        </div>
+
+        <div class="col-sm-8 d-flex flex-row mt-2">
+          <img src="/icon/plano-de-carreira.svg" width="50px" height="50px" alt="">
+          <p class="mx-4">melhoramento de desempenho</p>
+        </div>
+
+        <div class="col-sm-8 d-flex flex-row mt-2">
+          <img src="/icon/seguranca-de-dados.svg" width="50px" height="50px" alt="">
+          <p class="mx-4">a maxima segurança</p>
+        </div>
+      </section>
+
+      <aside class=" colsm d-flex align-items-center p-2">
+
+        <img src="/images/3327598.jpg" width="400px" height="400px"
+          alt=" Projeto vetor criado por freepik - br.freepik.com">
+
+      </aside>
+
+    </div>
+  </div>
+
+  <div class="container-fluid d-flex flex-row justify-content-center mt-5 auto text-white">
+    <picture class="row">
+      <img src="/images/secretarias.jpg" class="img-fluid" alt="">
+    </picture>
+    <div>
+      <h2>SOS/Consultancy</h2>
+      <p>Temos as melhor assistência </p>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center mt-5">
+    <img src="/images/world-map-306338_1280.png" class="img-fluid" alt="">
+    <h2>Nosso serviço e global</h2>
+  </div>
+
+  <footer id="container-fluid border-top ">
+    <section class="d-flex flex-row  justify-content-around flex-wrap border-top bg-primary text-white ">
+      <div class="align-self-center">
+        <h2>Sefity</h2>
+      </div>
+      <div class="p-2 align-self-center">
+        <p>contato</p>
+        <p>(021)555-777</p>
+        <p>Sefity@hotmail.com</p>
+      </div>
+      <div class="mt-4">
+        <ul >
+          <li ><a href="#">Sobre nos</a></li>
+          <li ><a href="">serviço</a></li>
+          <li ><a href="">produtos</a></li>
+        </ul>
+
+      </div>
+      <div class="align-self-center d-grid gap-2 d-md-block">
+        <button type="button" class="btn btn-primary" type="button"><i class="bi bi-facebook mx-2"></i></button>
+        <button type="button" class="btn btn-danger"><i class="bi bi-youtube mx-2"></i></button>
+        <button type="button" class="btn btn-info"><i class="bi bi-instagram mx-2"></i></button>
+      </div>
+    </section>
+  </footer>
+
+  <!---------------------------------modal------------------------------------------------------------->
+
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">IDM</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>O Internet Download Manager (IDM) é uma ferramenta para aumentar a velocidade de download em até 5 vezes,
+            retomar e programar downloads. A capacidade abrangente de recuperação e retomada de erros reiniciará
+            downloads quebrados ou interrompidos devido a conexões perdidas, problemas de rede, desligamentos de
+            computador ou quedas de energia inesperadas. A interface gráfica simples do usuário torna o IDM amigável e
+            fácil de usar. O Internet Download Manager possui um acelerador lógico de download inteligente que apresenta
+            segmentação de arquivo dinâmica inteligente e tecnologia de download multiparte segura para acelerar seus
+            downloads. Ao contrário de outros gerenciadores e aceleradores de download, o Internet Download Manager
+            segmenta arquivos baixados dinamicamente durante o processo de download e reutiliza as conexões disponíveis
+            sem etapas adicionais de conexão e login para obter o melhor desempenho de aceleração.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------------------------------------------------------------modal2----------------------------------------------->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Recurso-humanos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Gestão de Recursos Humanos, Gestão de Pessoas ou Administração de Recursos Humanos é a aplicação de um
+          conjunto de conhecimentos e técnicas administrativas especializadas no gerenciamento das relações das pessoas
+          com as organizações, com o objetivo de atingir os objetivos organizacionais, bem como proporcionar a
+          satisfação e a realização das pessoas envolvidas.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------------------modal3------------------------------------------------------------>
+  <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">SSO</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          SSO é a sigla para Saúde e Segurança Ocupacional. Ela consiste em uma série de ações e estratégias adotadas no
+          ambiente da empresa para promover a saúde e a segurança dos seus profissionais.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/popper.js/dist/popper.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

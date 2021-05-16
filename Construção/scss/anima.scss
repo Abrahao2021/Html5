@@ -1,0 +1,23 @@
+@mixin passiva($opacidade, $tras, $trasition) {
+    opacity: $opacidade;
+    transform: $tras;
+    transition: $trasition;
+}
+
+.esq {
+    @include passiva(0, transform(-100px, 0), ease-in-out .3s);
+
+}
+
+.top {
+    @include passiva(0, translate(0, -200px), ease-in-out .3s)
+}
+
+.dir {
+    @include passiva(0, translate(100px, 0), ease-in-out .3s)
+}
+
+.anima {
+    opacity: 1;
+    transform: translate(0, 0);
+}

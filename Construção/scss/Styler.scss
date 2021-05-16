@@ -1,0 +1,134 @@
+@import"body.scss";
+@import"anima.scss";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@mixin position {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: black;
+    content: '';
+    position: absolute;
+}
+
+header {
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height:100% ;
+    nav {
+    background-attachment: local;
+        ul {
+            list-style: none;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate( -50%, -50%);
+            opacity: 0;
+            transition: .20s .4s cubic-bezier(0, 1.37, 0.35, 1.24);
+        }
+
+        li {
+            padding: 3% 4%;
+            margin: 2%;
+            text-align: center;
+            font: {
+                family:arial;
+                size: 1.5em;
+                weight:7px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            transition:  all .2s ease-in-out;
+            &:hover{
+                color: #fff;
+            }
+
+            font: {
+                family: arial;
+                size: 1.2em;
+            }
+        }
+    }
+
+    input {
+        display: none;
+
+        &:checked ~ div {
+            display: none;
+        }
+        &:checked ~ nav ul{
+            opacity: 1;
+        }
+
+        &:checked~label .menu {
+            box-shadow: 0px 0px 0px 120vw rgb(9, 9, 235), 0px 0px 0px 130vh rgb(9, 9, 235);
+        }
+
+        &:checked~label span {
+            transform: rotate(45deg);
+
+            &:before {
+                top: 0px;
+                transform: rotate(90deg);
+            }
+
+            &:after {
+                bottom: 0px;
+                transform: rotate(90deg);
+
+            }
+        }
+    }
+}
+
+.menu {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(9, 9, 235);
+    border-radius: 50%;
+    position: fixed;
+    margin: 30px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    transition: box-shadow 1s ease-in-out;
+    box-shadow: 0px 0px 0px 0px rgb(9, 9, 235), 0px 0px 0px 0pxrgb(9, 9, 235);
+
+    &:hover {
+        box-shadow: 0px 0px 0px 8pxrgb(9, 9, 235), 0px 0px 0px 8px rgb(9, 9, 235);
+    }
+
+
+
+
+
+    span {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: black;
+        top: 29px;
+        left: 15px;
+        transition: .5s ease-in-out;
+
+        &:before {
+            top: -10px;
+            @include position();
+        }
+
+        &:after {
+            bottom: -10px;
+            @include position();
+            transition: .5s ease-in-out;
+        }
+    }
+}
